@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "TuliPdfMergeUtil": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
