@@ -10,7 +10,7 @@ WORKDIR /app
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["TuliPdfMergeUtil/TuliPdfMergeUtil.csproj", "TuliPdfMergeUtil/"]
+COPY ["./TuliPdfMergeUtil.csproj", "TuliPdfMergeUtil/"]
 RUN dotnet restore "./TuliPdfMergeUtil/TuliPdfMergeUtil.csproj"
 COPY . .
 WORKDIR "/src/TuliPdfMergeUtil"

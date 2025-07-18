@@ -3,13 +3,6 @@ using TuliPdfMergeUtil;
 
 var arguments = args;
 
-arguments =
-[
-	"-p", @"C:\Users\malik\OneDrive\Desktop\temp\tuli\pdfmerger\renewal-notice\pdf-renewal-notice-form.pdf",
-	"-j", @"C:\Users\malik\OneDrive\Desktop\temp\tuli\pdfmerger\renewal-notice\data.json",
-	"-o", @"C:\Users\malik\OneDrive\Desktop\temp\tuli\pdfmerger\output.pdf"
-];
-
 Parser.Default
 	.ParseArguments<Options>(arguments)
 	.WithParsed<Options>(o =>
