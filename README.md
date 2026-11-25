@@ -88,3 +88,19 @@ TuliPdfMergeUtil.exe -p "C:\Templates\Invoice.pdf" -j "C:\Data\InvoiceData.json"
 ```
 
 The result will be a new PDF file named `FilledInvoice.pdf` where the `InvoiceNumber` field is filled with "INV-2024-001".
+
+## Build from source
+
+Install the .NET 9 SDK, then run from the repository root:
+
+```shell
+dotnet build TuliPdfMergeUtil.sln -c Release
+```
+
+## Architecture
+
+The `TuliPdfMergeUtil/` project contains the command-line entry point and PDF processing service. It uses CommandLineParser for argument handling and iText for PDF operations.
+
+## Operational considerations
+
+Use a separate output file and retain the original template. Test with synthetic form data before processing confidential documents. Review iText licensing requirements for your intended use. Build and runtime compatibility have not been independently verified.
