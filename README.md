@@ -1,5 +1,10 @@
 # Tuli PDF Merge Util
 
+[![CI](https://github.com/mr-aybee/tuli-pdf-merge-util/actions/workflows/ci.yml/badge.svg)](https://github.com/mr-aybee/tuli-pdf-merge-util/actions/workflows/ci.yml)
+![.NET](https://img.shields.io/badge/.NET-9.0-512BD4)
+![type](https://img.shields.io/badge/type-CLI-4EAA25)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 This utility fills PDF form fields with data from a JSON file. It uses a PDF form template and a corresponding JSON file to generate a new, filled-out PDF document.
 
 ## Prerequisites
@@ -104,3 +109,15 @@ The `TuliPdfMergeUtil/` project contains the command-line entry point and PDF pr
 ## Operational considerations
 
 Use a separate output file and retain the original template. Test with synthetic form data before processing confidential documents. Review iText licensing requirements for your intended use. Build and runtime compatibility have not been independently verified.
+
+## Contributing
+
+Contributions are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) for the branch, build and pull-request workflow. Please report security issues privately through [GitHub security advisories](https://github.com/mr-aybee/tuli-pdf-merge-util/security/advisories/new), not public issues.
+
+## Code of Conduct
+
+This project follows the [Contributor Covenant](CODE_OF_CONDUCT.md). By participating you agree to uphold it.
+
+## License
+
+Released under the [MIT License](LICENSE). © 2026 Abdullah Shahid.
